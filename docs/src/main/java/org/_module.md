@@ -1,4 +1,14 @@
-# auto-suggest-java-demo
+# 基础信息
+
+|      |      |
+|------|------|
+| 名称 | org |
+| 编码语言 | .java |
+| 代码路径 | auto-suggest-java-demo/src/main/java/org |
+| 包名 | auto-suggest-java-demo.docs.src.main.java.org |
+| 概述说明 | Trie树实现：插入、补全、拼建建议、打印结构。节点类含子节点映射和字符标记。系统预置字典，支持交互操作。 |
+
+# 说明
 
 # Trie字典树模块总结
 
@@ -32,8 +42,24 @@
    - 异常处理机制保障系统稳定性
    - 可作为字典数据结构的学习演示系统
 
-## 快速导航
 
-### 👨‍💻 开发者
-- [开发指南](docs/developer/dev_guide.md) - 快速上手项目开发
-- [模块说明](docs/_module.md) - 项目模块详细说明
+### 包内部结构视图
+
+```mermaid
+graph TD
+    org --> example
+    example --> leansoftx
+    leansoftx --> Trie.java
+    leansoftx --> TrieNode.java
+    leansoftx --> Main.java
+```
+
+该流程图展示了Java项目的包结构层级关系，从顶级包org开始，经过example子包，最终到达leansoftx包。在leansoftx包中包含三个Java源文件：Trie.java实现字典树数据结构，TrieNode.java表示字典树节点，Main.java是程序入口文件。这种层级结构体现了标准Java项目的包组织方式，符合从通用到具体的命名规范。
+
+# 文件列表 File List
+
+| 名称   | 类型  | 说明 |
+|-------|------|-------------|
+| [example](example/_module.md) | package | Trie树实现：插入、补全、拼建建议、打印结构。节点类含子节点映射和字符标记。系统预置字典，支持交互操作。 |
+
+
